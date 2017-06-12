@@ -1,6 +1,14 @@
 
 
-**开发中的一些常用组件**
+### 开发中常用组件
+
+
+
+**imageSelect**
+
+移动端图片选取
+
+Demo：http://case.guitar.ren/demo/components/imageSelect.html
 
 
 
