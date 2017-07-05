@@ -8,7 +8,7 @@
 
 移动端图片选取
 
-Demo：http://case.guitar.ren/demo/components/imageSelect.html
+Demo：http://case.guitar.ren/demo/components/example/imageSelect.html
 
 
 
@@ -16,7 +16,7 @@ Demo：http://case.guitar.ren/demo/components/imageSelect.html
 
 内容滑动
 
-Demo：http://case.guitar.ren/demo/components/scroller.html
+Demo：http://case.guitar.ren/demo/components/example/scroller.html
 
 
 
