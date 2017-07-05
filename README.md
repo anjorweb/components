@@ -12,5 +12,11 @@ Demo：http://case.guitar.ren/demo/components/imageSelect.html
 
 
 
+**scroller**
+
+内容滑动
+
+Demo：http://case.guitar.ren/demo/components/scroller.html
+
 
 

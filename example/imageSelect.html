@@ -8,8 +8,8 @@
     <meta content="telephone=no" name="format-detection">
     <meta content="email=no" name="format-detection">
     <title>图片选择</title>
-    <script type="text/javascript" src="../imageSelect/exif.min.js"></script>
-    <script type="text/javascript" src="../imageSelect/imgslter.min.js"></script>
+    <script type="text/javascript" src="../imageSelect/exif.js"></script>
+    <script type="text/javascript" src="../imageSelect/imgslter.js"></script>
     <style type="text/css">
         button { background:#33317e; color:#fff; border:0; padding:10px; }
     </style>
@@ -18,12 +18,10 @@
 <body>
 <p>移动端选取本地图片组件，会自动调整方向和尺寸，解决图片超尺寸显示bug</p>
 <p>用于选择本地图片(支持手机摄像头拍照).不论是否横竖屏拍摄,最终得到的图片都会修正为正向图片,并缩放到指定大小,以方便后续操作使用.</p>
-
 <div style="padding-top: 30px;">
     <button id="btn">选择图片</button>
 </div>
 <img src="" id="show" alt="">
-
 <pre class='brush: js; '>
 创建组件
 new ImgSlter(config);
@@ -39,10 +37,9 @@ selecter.select() 开始选择图片，需要在click事件中调用。
 selecter.destroy() 销毁实例
 selecter.handler 注：此处是个变量。设置选择图片后的捕捉函数，传入唯一参数是一个toDataURL获得的图片二进制流。
 </pre>
-感谢shrek <a href="https://github.com/shrekshrek/image-selecter" target="_blank">https://github.com/shrekshrek/image-selecter</a>
-
 <script type="text/javascript">
-    var selecter = new ImgSlter();
+    var selecter = new ImgSlter({
+    });
     selecter.handler = function (data) {
         document.getElementById('show').src = data.img;
     };
